@@ -1,0 +1,42 @@
+{% load static %}
+<header class="header">
+    <div class="top-bar bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 bg-primary py-2 text-center text-lg-left">
+            <p class="mb-0 text-small"></p>
+          </div>
+          <div class="col-lg-8 text-right py-2 text-center text-lg-right">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="font-weight-normal text-small reset-anchor" href="#"><i class="fas fa-mobile mr-2"></i>+535 421 895 6523</a></li>
+              <li class="list-inline-item">|</li>
+              <li class="list-inline-item"><a class="font-weight-normal text-small reset-anchor" href="#"><i class="fas fa-envelope mr-2"></i>Construction@example.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-sm">
+      <div class="container"><a class="navbar-brand" href="/"><img src="{% static 'img/logo.svg' %}" alt="" width="200"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-2 active"><a class="nav-link text-uppercase" href="/">Anasayfa </a></li>
+            <li class="nav-item mx-2"><a class="nav-link text-uppercase" href="/about/">Hakkımızda</a></li>
+            <li class="nav-item mx-2"><a class="nav-link text-uppercase" href="/contact/">İletişim</a></li>
+            <li class="nav-item ml-2 dropdown"><a class="nav-link text-uppercase dropdown-toggle pr-0" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projeler</a>
+              <div class="dropdown-menu mt-lg-4" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item font-weight-bold text-small" href="/otomasyon/">Otomasyon</a><a class="dropdown-item font-weight-bold text-small" href="about.html">Endüstri 4.0</a><a class="dropdown-item font-weight-bold text-small" href="contact.html">Özel Yazılımlar                </a></div>
+            </li>          
+            <div class="widget search">
+              
+              <form action="{% url 'search' %}" class="search-form">
+                <div class="form-group">
+                  <input type="text" name="q" class="nav-item my-0 mx-2" frameborder="1" style="border:1;" placeholder="Ne aramıştınız?"></input>                
+                  <button type="submit" class="btn-danger"class="submit" frameborder="0" style="border:0;">Ara</button>
+              </form>
+                </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>

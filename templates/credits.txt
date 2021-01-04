@@ -1,0 +1,26 @@
+CREDITS
+------------------------------------------
+
+   - Bootstrap 4    -    https://getbootstrap.com
+
+   - Font Awesome   -    https://fontawesome.com
+
+   - Orion Icons    -    https://orioniconlibrary.com/
+
+   - Owl Carousel   -    https://owlcarousel2.github.io/OwlCarousel2/
+
+   - Modal Video    -    https://github.com/appleple/modal-video
+
+
+------------------------------------------
+IMAGES
+------------------------------------------
+
+   - All image credits go to www.pexels.com and available to use under their license.
+
+
+------------------------------------------
+CUSTOM OPENSTREET MAP
+------------------------------------------
+
+    - Leaflet Maps   -   https://leafletjs.com

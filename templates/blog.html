@@ -1,0 +1,22 @@
+
+
+    {% for obj in object_list %}
+      <iframe width="560" height="315"
+                    src="{{ obj.video_link }}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+      <div class="row d-flex align-items-stretch">
+        {% if not forloop.first and not forloop.last %}
+        <div class="image col-lg-5"><img src="{{ obj.thumbnail.url }}" alt="..."></div>
+        {% endif %}
+        <div class="text col-lg-7">
+          <div class="text-inner d-flex align-items-center">
+            <div class="content">
+              <header class="post-header">
+                <div class="category">
+                  {% for cat in obj.categories.all %}
+                  <a href="#">{{ cat.title }}</a>
+                  {% endfor %}
+    {% endfor %}            
